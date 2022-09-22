@@ -1,7 +1,8 @@
 /* Unidad 1. Entrada de datos
-    Autor: Luis Ernesto Anaya Tiscareño
-    Fecha: 01/09/2022
+    Autor: UP210923
+    Fecha: 21/09/2022
     Descripcion: Muestra la forma de ingresar tipos de datos por el usuario
+    Last modification: 21/09/2022
 */
 
 //Libreria para manejo de entradas y salida de pantalla
@@ -27,7 +28,18 @@ int main()
     cin >> entero; 
     cout << "El dato ingresado es: " << entero << endl;
 
-    cout << " ===================: " << entero << endl; 
+    cout << "Ingresa un dato de tipo flotante: " << endl;
+    cin >> flotante;
+    cout << "El dato ingresado es: " << flotante << endl;
+
+    cout << "Ingresa un dato de tipo double: " << endl;
+    cin >> grande;
+    cout << "El dato ingresado es: " << grande << endl;
+
+    cout << "Ingresa un dato tipo caracter: " << endl;
+    cin >> caracter;
+    cout << " El Dato ingresado es: " << endl;
+
 
     //Mas información en:
     //https://cplusplus.com/reference/cstdio/printf/
