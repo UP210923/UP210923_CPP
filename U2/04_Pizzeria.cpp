@@ -21,10 +21,10 @@ int main()
 
     if (pizza == 'Y' || pizza == 'y')
     {
-        cout << " Estos son tus ingredientes para tu pizza vegetariana \n¿Cual desdea agregar? : \n 1.Pimiento \n 2.Tofu \n Escoge un ingrediente extra para agregar a tu pizza: ";
+        cout << " Estos son tus ingredientes para tu pizza vegetariana \n¿Cual desea agregar? : \n 1.Pimiento \n 2.Tofu \n Escoge un ingrediente extra para agregar a tu pizza: ";
         cin >> ingrediente;
 
-         cout << "Tu pizza es vegetariana, tus ingredientes son:" << endl;
+         cout << "Tu pizza es vegetariana, tus ingredientes son mozarrella y tomate:" << endl;
 
         if (ingrediente == 1)
         {
@@ -39,8 +39,10 @@ int main()
     }
     else if (pizza == 'N' || pizza == 'n')
     {
-        cout << "Estos son tus otros ingredientes para tu pizza no vegetariana: \n 1.Peperoni \n 2.Jamon \n 3.Salmon \n Escoge un ingrediente extra para agregar a tu pizza: ";
+        cout << "Estos son tus otros ingredientes para tu pizza no vegetariana \n¿Cual desea agregar?: \n 1.Peperoni \n 2.Jamon \n 3.Salmon \n Escoge un ingrediente extra para agregar a tu pizza: ";
         cin >> ingrediente;
+
+         cout << "Tu pizza no es vegetariana, tus ingredientes son mozarrella y tomate: " << endl;
 
         if (ingrediente == 1)
         {
