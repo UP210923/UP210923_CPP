@@ -16,20 +16,20 @@ using namespace std;
 int main()
 {
     int edad, costo;
-    cout <<"¿Cuantos años tienes carnal? ";
+    cout <<"¿How old are you carnal? ";
     cin >> edad;
 
     if( edad>0 && edad < 4){
-        cout <<"Tu entrada es gratis pasele \n";
+        cout <<"Your entry is free pasele \n";
     }
     else if (edad>=4 && edad<=18){
-        cout <<"Tienes que pagar $5 Pesos \n";
+        cout <<"You have to pay $5 Pesos \n";
     }
     else if (edad>18){
-        cout <<"Tienes que pagar $10 Pesos \n";
+        cout <<"You have to pay $10 Pesos \n";
     }
     else {
-        cout <<" Cual es esa edad? \n";
+        cout <<" What is that age carnal? \n";
     }
     return 0;
 
