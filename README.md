@@ -14,7 +14,7 @@ In this repository the works of the subject of Programming will be saved
 **_My Fav Song At The Moment_**  [Mi Rolon](https://www.youtube.com/watch?v=ARWg160eaX4)
 
 the example exercises for each topic, this is a little demostration of 
-- 01_Renta
+- 01_Renta (you can calculate how many $ you wanna pay for Rent)
 ```if (renta < 10000) {
             cout <<"you have to pay $" <<renta*.05;
             cout << " in taxes";
@@ -36,7 +36,7 @@ the example exercises for each topic, this is a little demostration of
 
  **This is my second assignment" 
  
- - 02_Beneficios
+ - 02_Beneficios (you can calculate how many $ your gonna get in your anual bonus)
  ```porcentaje = calificacion*100;
     if(calificacion == 0){
         cout << " Your anual bonus is $0 " << endl;
@@ -52,7 +52,7 @@ the example exercises for each topic, this is a little demostration of
  ```
  **This is my third assignment" 
  
- - 03_Trabajo
+ - 03_Trabajo (I explain How much are you going to pay for your entry according to your age)  
  ``` if( edad>0 && edad < 4){
         cout <<"Your entry is free pasele \n";
     }
