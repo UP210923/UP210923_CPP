@@ -22,17 +22,21 @@ using namespace std;
             cout <<"you have to pay $" <<renta*.05;
             cout << " in taxes";
         }
-        else if (renta >= 10000 && renta < 20000) {
+            else if (renta >= 10000 && renta < 20000) {
             cout << "you have to pay $" <<renta*.15;
             cout << " in taxes";
         }
-        else if (renta >= 20000 && renta < 35000) {
+            else if (renta >= 20000 && renta < 35000) {
             cout << "you have to pay $" <<renta*.20;
             cout << " in taxes";
         }
-        else if (renta >= 35000 && renta < 60000) {
+            else if (renta >= 35000 && renta < 60000) {
             cout << "you have to pay $" <<renta*.30;
             cout << " in taxes";
+            else {
+            cout << "You have to set a number";
         }
+        }
+        
         return 0;
     }
