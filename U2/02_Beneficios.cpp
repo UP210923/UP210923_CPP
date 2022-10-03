@@ -10,7 +10,7 @@ level  Puntuacion
 Bonus of $2400 Base on your annual qualification
 Inacceptable 0.0
 Acceptable 0.4
-worthy 0.6 o Mas
+worthy 0.6 or more
 Write a programm to read score
 */
 #include <iostream>
