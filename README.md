@@ -65,7 +65,8 @@ the example exercises for each topic, this is a little demostration of
     else {
         cout <<" What is that age carnal? \n";
  ```
-  **This is my fourth assignment " This a little example of the programm where there i explain how can you order a pizza
+  **This is my fourth assignment " This a little example of the programm where I explain how you can order a pizza
+  in the example. I just only set the Yes site as the same parf of "No"
  
  - 04_Pizzeria
  ``` if (pizza == 'Y' || pizza == 'y')
