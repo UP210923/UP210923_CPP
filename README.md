@@ -13,7 +13,7 @@ In this repository the works of the subject of Programming will be saved
 
 **_My Fav Song At The Moment_**  [Mi Rolon](https://www.youtube.com/watch?v=ARWg160eaX4)
 
-the example exercises for each topic
+the example exercises for each topic, this is a little demostration of 
 - 01_Renta
 ```if (renta < 10000) {
             cout <<"you have to pay $" <<renta*.05;
@@ -34,8 +34,9 @@ the example exercises for each topic
             cout << "You have to set a number";
  ```
 
- **This is my second work of my class" 
- -02_Beneficios
+ **This is my second assignment" 
+ 
+ - 02_Beneficios
  ```porcentaje = calificacion*100;
     if(calificacion == 0){
         cout << " Your anual bonus is $0 " << endl;
@@ -49,8 +50,9 @@ the example exercises for each topic
         cout << "Your payments porcentage is: "<< porcentaje<<"%";
     }
  ```
- **This is my third work of my class" 
- -03_Trabajo
+ **This is my third assignment" 
+ 
+ - 03_Trabajo
  ``` if( edad>0 && edad < 4){
         cout <<"Your entry is free pasele \n";
     }
@@ -63,8 +65,9 @@ the example exercises for each topic
     else {
         cout <<" What is that age carnal? \n";
  ```
-  **This is my fourth work of my class" This a little example of the programm 
- -04_Pizzeria
+  **This is my fourth assignment " This a little example of the programm where there i explain how can you order a pizza
+ 
+ - 04_Pizzeria
  ``` if (pizza == 'Y' || pizza == 'y')
     {
         cout << " These are your ingredients for your vegan pizza \n¿Which toppings do you like to add? : \n 1.Pepper \n 2.Tofu \n Pick an extra topping to add to the pizza: ";
