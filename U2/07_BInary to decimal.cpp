@@ -13,7 +13,7 @@ using namespace std;
 int main()
 {
     
-    int num =35;
+    int num =15;
     string resultado = "";
     while (num != 0){
         resultado = to_string(num%2) + resultado ;
