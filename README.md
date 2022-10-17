@@ -1,7 +1,7 @@
 # UP210923_CPP
 Repository of my programming material
 Weekly i gonna keep updating this README, keep looking my profile and i hope u enjoy 
-
+I could be late with my updates, but dont worry i updating soon
 In this repository the works of the subject of Programming will be saved
 
 ![Esta es una imagen de ejemplo](https://github.com/UP210923/UP210923_CPP/blob/main/imagenes/%C3%ADndice.jpeg)
