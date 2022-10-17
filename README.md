@@ -1,6 +1,6 @@
 # UP210923_CPP
 Repository of my programming material
-Weekly i gonna keep updating this README, keep looking my profile and i hope u enjoy 
+Weekly i gonna update this README, keep looking my profile and i hope u enjoy 
 I could be late with my updates, but dont worry i updating soon
 In this repository the works of the subject of Programming will be saved
 
