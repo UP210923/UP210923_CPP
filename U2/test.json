@@ -1,0 +1,24 @@
+{
+    "wicho":{
+        "prefix": "caguama",
+        "body": [
+        "/*",
+        "Author: ${1}",
+        "Date: ${2}",
+        "Description: ",
+        "*/",
+        "#include <iostream>",
+        "",
+        "using namespace std;",
+        "",
+        "int main(){",
+        "",
+        "return 0;",
+        "}"
+
+        ],
+        "Description": "Encabezado pa mis chambas de c++"
+
+
+    }
+}   
