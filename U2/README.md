@@ -70,3 +70,21 @@ the example exercises for each topic, this is a little demostration of
             cout << "-Your extra ingredient for your pizza will be: Tofu " << endl;
         }
  ```
+ **This is my fifth assignment" 
+ 
+ - 05_Temperature
+ ``` int contador=0;
+    float temperatura;
+    float temperaturaBaja=10000;
+    float temperaturaAlta=-10000;
+    float tempAverage = 0;
+    do{
+        cout <<"Give me the temperature: ";
+        cin >> temperatura;
+        tempAverage += temperatura;
+        contador++;
+        if(temperatura <= temperaturaBaja)
+        temperaturaBaja = temperatura;
+        if(temperatura >= temperaturaAlta)
+        temperaturaAlta = temperatura;
+ ```
