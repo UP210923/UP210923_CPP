@@ -2,10 +2,10 @@
 Date: 28/09/2022
 Author: Alan Alejandro Hernandez Macias
 Email: up210923@alumnos.upa.edu.mx
-Description: i gonna talk about a pizzeria where there u can select
-multiple ingredients
-Last Modification:
- Write a program that ask the user if he wants a vegan pizza or not 
+Description: i gonna talk about temperature
+im doing a program where if you write some temperatures u gonna get an average of all them
+Last Modification:23/10/2022
+ Write a program that ask the user 5 temperatures and get the average
 */
 #include <iostream>
 using namespace std;
