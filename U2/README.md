@@ -124,4 +124,31 @@ the example exercises for each topic, this is a little demostration of
 
     cout << resultado << endl;
  ```
+ **This is my eighth assignment" 
+ 
+ - 08_Multiplication table (if you type in this program a number it will ask you how many col you will need, then the program make a multiplication table with graphics)
+ ``` 
+  cout << " What number will you want your board?: ";
+    cin >> numero;
+    cout << " How many lines will it be?: ";
+    cin >> cantidad;
+
+    for (int parada = 1; parada <= cantidad; parada++)
+    {
+        if (parada == 1)
+        {
+            for (int lineas = 0; lineas <= 39; lineas++)
+            {
+                cout << "-";
+            }
+            cout << "\n";
+        }
+        cout << "|" << parada << "\t x \t" << cantidad << "\t = \t" << (parada * cantidad) << "\t|\n";
+
+        for (int lineas = 0; lineas <= 39; lineas++)
+        {
+            cout << "-";
+        }
+        cout << "\n";
+ ```
  
