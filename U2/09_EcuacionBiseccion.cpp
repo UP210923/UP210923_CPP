@@ -8,10 +8,83 @@ Last Modification:
 */
 #include <iostream>
 #include <cmath>
+#include <iomanip>
 
 using namespace std;
-float resolverEcuacion(float valor){
-    //con la ecuacion de x^2+3x+8
-    return pow(valor, 2)+ 3 *valor + 8;
+
+double solveEquation(float worth)
+{
+    return pow(worth, 2) - worth - 12;
 }
-int ejem
+int main()
+{
+    double a;
+    double b;
+    double c = (a + b) / 2;
+    double ya = solveEquation(a);
+    double yb = solveEquation(b);
+    double yc = solveEquation(c);
+    float error = 0.01;
+    float noRoot = 0;
+
+    cout << "Enter the value of (a): ";
+    cin >> a;
+    cout << endl;
+    cout << "Enter the value of (b): ";
+    cin >> b;
+    cout << endl;
+
+        cout << "\t" << "a" << "\t"
+        << "\t" << "b" << "\t"
+        << "\t" << "c" << "\t"
+        << "\t" << "ya" << "\t"
+        << "\t" << "yb" << "\t"
+        << "\t" << "yc" << "\t" << endl;
+    cout << "________________________________________________________________________________________________" << endl;
+    cout << endl;
+
+    do
+    {
+        c = (a + b) / 2;
+        ya = solveEquation(a);
+        yb = solveEquation(b);
+        yc = solveEquation(c);
+        if (ya * yc < 0)
+        {
+            b = c;
+        }
+        else if (yc * yb < 0)
+        {
+            a = c;
+        }
+        else
+        {
+            noRoot = 1;
+        }
+
+        if (noRoot == 0)
+        {
+            cout << fixed;
+            cout << setprecision(3) << "\t" << a << "\t"
+            << "\t" << b << "\t"
+            << "\t" << c << "\t"
+            << "\t" << ya << "\t"
+            << "\t" << yb << "\t"
+            << "\t" << yc << "\t" << endl;
+        }
+        else
+        {
+            cout << "\t" << "No root."
+            << "\t" << "No root."
+            << "\t" << "No root."
+            << "\t" << "No root."
+            << "\t" << "No root."
+            << "\t" << "No root." << endl;
+        }
+        
+    } while ((abs(yc) >= error) && (noRoot != 1));
+
+    cout << endl;
+
+    return 0;
+}
