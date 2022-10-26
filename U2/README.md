@@ -72,7 +72,7 @@ the example exercises for each topic, this is a little demostration of
  ```
  **This is my fifth assignment" 
  
- - 05_Temperature
+ - 05_Temperature (i do a program where if you write some temperatures u gonna get an average of all them)
  ``` int contador=0;
     float temperatura;
     float temperaturaBaja=10000;
@@ -88,3 +88,22 @@ the example exercises for each topic, this is a little demostration of
         if(temperatura >= temperaturaAlta)
         temperaturaAlta = temperatura;
  ```
+**This is my sixth assignment" 
+ 
+ - 06_Products ( I explain how to Read an infinite amount of products, their price and at the end show the total to pay )
+ ``` do
+    {
+    cout << "\n how many products do you need? ";
+    cin >> cantiProduct;
+    if (cantiProduct < 0)
+    {
+    cout << "I need a real quantity of product: ";
+    break;
+    }
+    cout << "How much is the price of the product $ : ";
+    cin >> precio;
+    suma = cantiProduct * precio;
+    total += suma;
+ ```
+ 
+ 
