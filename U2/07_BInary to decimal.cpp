@@ -1,5 +1,5 @@
 /*
-Date: 28/09/2022
+Date: 5/10/2022
 Author: Alan Alejandro Hernandez Macias
 Email: up210923@alumnos.upa.edu.mx
 Description: i gonna talk about a Decimal to binary program
