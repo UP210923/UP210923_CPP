@@ -151,4 +151,46 @@ the example exercises for each topic, this is a little demostration of
         }
         cout << "\n";
  ```
+ **This is my ninth assignment" 
+ 
+ - 09_EcuacionBiseccion. ( Math method for getting roots )
+ ``` 
+   cout << "Enter the value of (a): ";
+    cin >> a;
+    cout << endl;
+    cout << "Enter the value of (b): ";
+    cin >> b;
+    cout << endl;
+
+        cout << "\t" << "a" << "\t"
+        << "\t" << "b" << "\t"
+        << "\t" << "c" << "\t"
+        << "\t" << "ya" << "\t"
+        << "\t" << "yb" << "\t"
+        << "\t" << "yc" << "\t" << endl;
+    cout << "________________________________________________________________________________________________" << endl;
+    cout << endl;
+
+    do
+    {
+        c = (a + b) / 2;
+        ya = solveEquation(a);
+        yb = solveEquation(b);
+        yc = solveEquation(c);
+        if (ya * yc < 0)
+        {
+            b = c;
+        }
+        else if (yc * yb < 0)
+        {
+            a = c;
+        }
+        else
+        {
+            noRoot = 1;
+        }
+
+        if (noRoot == 0)
+        {
+ ```
  
