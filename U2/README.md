@@ -111,5 +111,17 @@ the example exercises for each topic, this is a little demostration of
     suma = cantiProduct * precio;
     total += suma;
  ```
+ **This is my seventh assignment" 
  
+ - 07_Binary to decimal. ( i gonna talk about a Decimal to binary program The number you enter will change from decimal to binary )
+ ``` 
+   int num =15;
+    string resultado = "";
+    while (num != 0){
+        resultado = to_string(num%2) + resultado ;
+        num /=2;
+    }
+
+    cout << resultado << endl;
+ ```
  
