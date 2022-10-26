@@ -1,5 +1,3 @@
-<h1 align=center>
-UNIT 2
 
 ##the example exercises for each topic, this is a little demostration of 
 - 01_Renta (you can calculate how many $ you wanna pay for Rent)
