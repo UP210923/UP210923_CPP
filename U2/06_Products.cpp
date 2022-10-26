@@ -11,23 +11,23 @@ using namespace std;
 int main()
 {
 	float precio, cantiProduct = 0, total=0, suma;
-	cout << "Bienvenidos a su tienda \t \n "
-		 << "En donde debe ingresar el nombre de su producto con cantidad y su precio";
+	cout << "welcome to your store \t \n "
+		 << "Where you must enter the name of your product with quantity and its price";
 	do
 	{
-		cout << "\n Cuantos productos necesita? ";
+		cout << "\n how many products do you need? ";
 		cin >> cantiProduct;
 		if (cantiProduct < 0)
 		{
-			cout << "Necesito una cantidad real de producto: ";
+			cout << "I need a real quantity of product: ";
 			break;
 		}
-		cout << "De cuanto es el precio del producto $ : ";
+		cout << "How much is the price of the product $ : ";
 		cin >> precio;
 		suma = cantiProduct * precio;
 		total += suma;
 
 	}while (cantiProduct != 0);
-			cout << "El total de tu factura sera:$" << total<<endl;
+			cout << "Your total bill will be $" << total<<endl;
 			return 0;
 		}
