@@ -1,6 +1,7 @@
 the example exercises for each topic, this is a little demostration of 
 - 01_Renta (you can calculate how many $ you wanna pay for Rent)
-```if (renta < 10000) {
+```
+            if (renta < 10000) {
             cout <<"you have to pay $" <<renta*.05;
             cout << " in taxes";
         }
@@ -22,7 +23,8 @@ the example exercises for each topic, this is a little demostration of
  **This is my second assignment" 
  
  - 02_Beneficios (you can calculate how many $ your gonna get in your anual bonus)
- ```porcentaje = calificacion*100;
+ ```
+    porcentaje = calificacion*100;
     if(calificacion == 0){
         cout << " Your anual bonus is $0 " << endl;
     }
@@ -38,7 +40,8 @@ the example exercises for each topic, this is a little demostration of
  **This is my third assignment" 
  
  - 03_Trabajo (I explain How much are you going to pay for your entry according to your age)  
- ``` if( edad>0 && edad < 4){
+ ``` 
+    if( edad>0 && edad < 4){
         cout <<"Your entry is free pasele \n";
     }
     else if (edad>=4 && edad<=18){
@@ -54,7 +57,8 @@ the example exercises for each topic, this is a little demostration of
   in the example. I just only set the Yes site as the same parf of "No"
  
  - 04_Pizzeria
- ``` if (pizza == 'Y' || pizza == 'y')
+ ``` 
+        if (pizza == 'Y' || pizza == 'y')
     {
         cout << " These are your ingredients for your vegan pizza \n¿Which toppings do you like to add? : \n 1.Pepper \n 2.Tofu \n Pick an extra topping to add to the pizza: ";
         cin >> ingrediente;
@@ -73,7 +77,8 @@ the example exercises for each topic, this is a little demostration of
  **This is my fifth assignment" 
  
  - 05_Temperature (i do a program where if you write some temperatures u gonna get an average of all them)
- ``` int contador=0;
+ ``` 
+    int contador=0;
     float temperatura;
     float temperaturaBaja=10000;
     float temperaturaAlta=-10000;
@@ -91,7 +96,8 @@ the example exercises for each topic, this is a little demostration of
 **This is my sixth assignment" 
  
  - 06_Products ( I explain how to Read an infinite amount of products, their price and at the end show the total to pay )
- ``` do
+ ``` 
+    do
     {
     cout << "\n how many products do you need? ";
     cin >> cantiProduct;
