@@ -3,7 +3,6 @@ Date: 12/10/2022
 Author: Alan Alejandro Hernandez Macias
 Email: up210923@alumnos.upa.edu.mx
 Description: the program make a multiplication table
-multiple
 Last Modification:
 */
 #include <iostream>
