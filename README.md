@@ -21,3 +21,7 @@ In this repository the works of the subject of Programming will be saved
 **_My Fav Song At The Moment_**  [Mi Rolon](https://www.youtube.com/watch?v=ARWg160eaX4)
 
 
+http://www.cppforschool.com/project/tic-tac-toe-project.html
+https://www.stechies.com/tic-tac-toe-cpp/
+https://gist.github.com/ajnarayan/718d7fea9692f8442c20
+
