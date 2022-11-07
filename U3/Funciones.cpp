@@ -18,9 +18,9 @@ int main(){
     int num1, num2;
     int valormaximo;
 
-    cout <<"Dame un numero";
+    cout <<"Dame un numero: ";
     cin >> num1;
-    cout <<"Dame otro numero";
+    cout <<"Dame otro numero: ";
     cin >> num2;
 
     cout <<"\n ================\n";
@@ -34,9 +34,9 @@ int getMaxVal(int num1, int num2){
     int valorMaximo;
     if (num1 > num2){
         valorMaximo = num1;
+    }
     else{
         valorMaximo = num2;
     }
     return valorMaximo;
-    }
 }

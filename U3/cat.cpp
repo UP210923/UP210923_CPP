@@ -6,14 +6,37 @@ Description:
 #include <iostream>
 
 using namespace std;
+void Escogerjugador(int player)
+bool Checarganador(int player)
+char escuadra[3][3] = {{'1','2','3'},{'4','5','6'},{'7','8','9'}}
+void tablero;
+int main()
+{
+        int jugador=1,i,escoger;
+    char marcar;
+    do
+    {
+        tablero();
+        player=(player%2)?1:2;
 
-int main(){
-    cout << "    |     |    \n  "\033[0m";
-    cout << "____|_____|____\n  "\033[0m";
-    cout << "    |     |    \n  "\033[0m";
-    cout << "    |     |    \n  "\033[0m";
-    cout << "____|_____|____\n  "\033     ;
-    cout << "    |     |    \n";
-    cout << "    |     |    \n";
-    cout << "\033[0;31m" << "SI" << "\033[0m";
+        cout << "Player "<< player
+
+    }
+
+
+
+
+
+
+
+
+
+    cout <<"\033[0;31m"<<"     |     |    \n "<< "\033[0m";
+    cout <<"\033[0;31m"<<"____|_____|____\n "<< "\033[0m";
+    cout <<"\033[0;31m"<<"    |     |    \n "<< "\033[0m";
+    cout <<"\033[0;31m"<<"    |     |    \n "<< "\033[0m";
+    cout <<"\033[0;31m"<<"____|_____|____\n "<< "\033[0m";
+    cout <<"\033[0;31m"<<"    |     |    \n "<< "\033[0m";
+    cout <<"\033[0;31m"<<"    |     |    \n "<< "\033[0m";
+
 }
