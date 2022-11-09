@@ -1,7 +1,8 @@
 <h1 align="center",>
 Welcome to unit two: Control structures and cycles
 </h1>
-the example exercises for each topic, this is a little demostration of 
+
+### the example exercises for each topic, this is a little demostration of 
 - 01_Renta (you can calculate how many $ you wanna pay for Rent)
 **Income tax rates**<br>
 
