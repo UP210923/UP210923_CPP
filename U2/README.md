@@ -1,20 +1,38 @@
 <h1 align="center",>
-Welcome to unit two: Control structures and cycles
+Welcome to unit two: Control structures and cycles. 
+            A small demonstration of what the block is
 </h1>
 
-### the example exercises for each topic, this is a little demostration of them
-- 01_Renta (you can calculate how many $ you wanna pay for Rent)
-1.where they ask you for an amount of rent
-2.The program will automatically calculate the total payment
-3.it gives you the cost with the tax already added
+<h1 align="center">
+ Exercise 1.- Annual Rent (you can calculate how many $ you wanna pay for Rent)💵🤑
+</h1>
+
+
+ ### 01_Annual_Rent
+ ### Explanation
+- 1.where they ask you for an amount of rent
+- 2.The program will automatically calculate the total payment
+- 3.it gives you the cost with the tax already added
 **Income tax rates**<br>
 
-> Less than $10,000 5%<br>
-> Among $10,000 y $20,000 15%<br>
-> Among $20,000 y $35,000 20%<br>
-> Among $35,000 y $60,000 30%<br>
-> More of $60,000 45%<br>
+> Less than $10,000 5% the percentage is applied
+to total of rent<br>
+> Among $10,000 y $20,000 15% the percentage is applied
+to total of rent<br>
+> Among $20,000 y $35,000 20% the percentage is applied
+to total of rent<br>
+> Among $35,000 y $60,000 30% the percentage is applied
+to total of rent<br>
+> More of $60,000 45% the percentage is applied
+to total of rent<br>
 
+### INPUT
+```
+            cout << "How much is your rent? carnal: ";
+            cin >> renta;
+```
+
+### PROCESS
 Write a program that asks the user for their annual income and shows the corresponding tax rate on the screen.<br>
 ```
             if (renta < 10000) {
@@ -35,9 +53,18 @@ Write a program that asks the user for their annual income and shows the corresp
             else {
             cout << "You have to set a number";
  ```
-
- **This is my second assignment" 
+### OUTPUT
+```
+            cout << "you have to pay $" <<renta*.30;
+            cout << " in taxes";
+```
  
+ <h1 align="center">
+ Exercise 2.- Annual benefit
+</h1>
+
+## Explanation
+
  - 02_Beneficios (you can calculate how many $ your gonna get in your anual bonus)
 In a certain company, its employees are evaluated at the end of each year. The points that can be obtained in the evaluation start at 0.0 and can go up, translating into better benefits. The points you can get employees can be 0.0, 0.4, 0.6 or more, but not intermediate values between the figures mentioned.Below is a table with the levels corresponding to each score. The amount of money earned on each level is $2,400 multiplied by the level score.<br>
 
@@ -49,6 +76,14 @@ In a certain company, its employees are evaluated at the end of each year. The p
 
 Write a program that reads the user's score and indicates their level of performance, as well as the amount of money the user will receive.
 Thank you very much for choosing us! We look forward to serving you again.<br>
+
+### INPUT
+```
+            double calificacion,bono = 2400, porcentaje;
+            cout << " Insert your calification: \n 1. 0.0  \n 2. 0.4   \n 3. 0.6 \n  Calification: ";
+            cin >> calificacion ;
+ ```
+ ### PROCESS
  ```
     porcentaje = calificacion*100;
     if(calificacion == 0){
@@ -63,11 +98,30 @@ Thank you very much for choosing us! We look forward to serving you again.<br>
         cout << "Your payments porcentage is: "<< porcentaje<<"%";
     }
  ```
- **This is my third assignment" 
+ ### OUTPUT
+ ```
+    cout << "Your anual bonus is: $" << bono*calificacion<<" Dollars \n";
+        cout << "Your payments porcentage is: "<< porcentaje<<"%";
+    }
+ ```
  
+ <h1 align="center">
+ Exercise 3.- Game center customer price
+</h1>
+
+## Explanation
+
  - 03_Trabajo (I explain How much are you going to pay for your entry according to your age)  
 Write a program for a company that has arcades for all ages and wants to automatically calculate the price to charge its customers for entering. The program must ask the user for the customer's age and display the price of the ticket. Yes the client is under 4 years old can enter for free, if they are between 4 and 18 years old they must pay $5 and if they are over 18 years old, $10.<br>
- ``` 
+
+### INPUT
+ ```
+int edad, costo;
+    cout <<"¿How old are you carnal? ";
+    cin >> edad;
+  ``` 
+### PROCESS
+  ``` 
     if( edad>0 && edad < 4){
         cout <<"Your entry is free pasele \n";
     }
@@ -80,6 +134,11 @@ Write a program for a company that has arcades for all ages and wants to automat
     else {
         cout <<" What is that age carnal? \n";
  ```
+  ### OUTPUT
+  ```
+ cout <<"You have to pay $ Pesos \n";
+  ```
+  
   **This is my fourth assignment " This a little example of the programm where I explain how you can order a pizza
   in the example. I just only set the Yes site as the same parf of "No"
  
