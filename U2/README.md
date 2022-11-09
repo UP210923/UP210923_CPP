@@ -2,8 +2,11 @@
 Welcome to unit two: Control structures and cycles
 </h1>
 
-### the example exercises for each topic, this is a little demostration of 
+### the example exercises for each topic, this is a little demostration of them
 - 01_Renta (you can calculate how many $ you wanna pay for Rent)
+1.where they ask you for an amount of rent
+2.The program will automatically calculate the total payment
+3.it gives you the cost with the tax already added
 **Income tax rates**<br>
 
 > Less than $10,000 5%<br>
