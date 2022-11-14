@@ -18,7 +18,7 @@ int winner (char board[3][3]);
 
 void game(char board[3][3])
 {
-    int counter1=0, counter2;
+    int Player1=0, Player2=0;
 
     enterMove(board);
 
@@ -27,7 +27,7 @@ void game(char board[3][3])
         system ("clear");
         boardBody(board);
 
-        if (counter1 % 2 == 0)
+        if (Player1 % 2 == 0)
         {
             entryMove(board);
         }
@@ -36,20 +36,20 @@ void game(char board[3][3])
             cpu(board);
         }
 
-        counter2 = winner(board);
+        Player2 = winner(board);
         
-        counter1++;
+        Player1++;
         
-    } while (counter1 <= 9 && counter2 == 3);
+    } while (Player1 <= 9 && Player2 == 3);
 
     system ("clear");
     boardBody(board);
 
-    if (counter2 < 2)
+    if (Player2 < 2)
     {
         cout << endl << "\033[0;31m" << "Win" << "\033[0m"<< endl << endl; 
     }
-    else if (counter2 > 1)
+    else if (Player2 > 1)
     {
         cout << endl << "\033[0;31m" << "Lose" << "\033[0m"<< endl << endl; 
     }
@@ -64,23 +64,23 @@ void game(char board[3][3])
 
 void enterMove(char board[3][3])
 {
-    int counter1, counter2;
+    int Player1, Player2;
     char entry;
 
     entry = '1';
 
-    for (int counter1 = 0; counter1 < 3; counter1++)
+    for (int Player1 = 0; Player1 < 3; Player1++)
     {
-        for (int counter2 = 0; counter2 < 3; counter2++)
+        for (int Player2 = 0; Player2 < 3; Player2++)
         {
-            board[counter1][counter2] = entry++;
+            board[Player1][Player2] = entry++;
         }
     }
 }
 
 void entryMove(char board[3][3])
 {
-    int counter1, counter2, counter3;
+    int Player1, Player2, counter3;
     char enter;
 
     do
@@ -98,9 +98,9 @@ void entryMove(char board[3][3])
         {
         case '1':
         {
-            counter1 = 0;
-            counter2 = 0;
-            if (board[counter1][counter2] == 'X' || board[counter1][counter2] == 'O')
+            Player1 = 0;
+            Player2 = 0;
+            if (board[Player1][Player2] == 'X' || board[Player1][Player2] == 'O')
             {
                 counter3 = 1;
                 cout << "Invalid movement!";
@@ -109,9 +109,9 @@ void entryMove(char board[3][3])
         }
         case '2':
         {
-            counter1 = 0;
-            counter2 = 1;
-            if (board[counter1][counter2] == 'X' || board[counter1][counter2] == 'O')
+            Player1 = 0;
+            Player2 = 1;
+            if (board[Player1][Player2] == 'X' || board[Player1][Player2] == 'O')
             {
                 counter3 = 1;
                 cout << "Invalid movement!";
@@ -120,9 +120,9 @@ void entryMove(char board[3][3])
         }
         case '3':
         {
-            counter1 = 0;
-            counter2 = 2;
-            if (board[counter1][counter2] == 'X' || board[counter1][counter2] == 'O')
+            Player1 = 0;
+            Player2 = 2;
+            if (board[Player1][Player2] == 'X' || board[Player1][Player2] == 'O')
             {
                 counter3 = 1;
                 cout << "Invalid movement!";
@@ -131,9 +131,9 @@ void entryMove(char board[3][3])
         }
         case '4':
         {
-            counter1 = 1;
-            counter2 = 0;
-            if (board[counter1][counter2] == 'X' || board[counter1][counter2] == 'O')
+            Player1 = 1;
+            PLayer2 = 0;
+            if (board[Player1][Player2] == 'X' || board[Player1][Player2] == 'O')
             {
                 counter3 = 1;
                 cout << "Invalid movement!";
@@ -142,9 +142,9 @@ void entryMove(char board[3][3])
         }
         case '5':
         {
-            counter1 = 1;
-            counter2 = 1;
-            if (board[counter1][counter2] == 'X' || board[counter1][counter2] == 'O')
+            Player1 = 1;
+            Player2 = 1;
+            if (board[Player1][Player2] == 'X' || board[Player1][Player2] == 'O')
             {
                 counter3 = 1;
                 cout << "Invalid movement!";
@@ -153,9 +153,9 @@ void entryMove(char board[3][3])
         }
         case '6':
         {
-            counter1 = 1;
-            counter2 = 2;
-            if (board[counter1][counter2] == 'X' || board[counter1][counter2] == 'O')
+            Player1 = 1;
+            Player2 = 2;
+            if (board[Player1][Player2] == 'X' || board[Player1][Player2] == 'O')
             {
                 counter3 = 1;
                 cout << "Invalid movement!";
@@ -164,9 +164,9 @@ void entryMove(char board[3][3])
         }
         case '7':
         {
-            counter1 = 2;
-            counter2 = 0;
-            if (board[counter1][counter2] == 'X' || board[counter1][counter2] == 'O')
+            Player1 = 2;
+            Player2 = 0;
+            if (board[Player1][counter2] == 'X' || board[counter1][counter2] == 'O')
             {
                 counter3 = 1;
                 cout << "Invalid movement!";
