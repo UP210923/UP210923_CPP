@@ -54,10 +54,11 @@
  
 ![image](https://user-images.githubusercontent.com/112887372/203228128-f836f6a1-912d-4fc4-9f5d-915e67280676.png)
 
- 
-
-
+<h2>Advantages</h2>
 [Menu](#Menu) 
 <h2>Advantages</h2>
+
+**By doing the work I begin to develop more my intelligence in logic, I begin to understand more how functions work**
+
 
 
