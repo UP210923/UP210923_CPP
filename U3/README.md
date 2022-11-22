@@ -20,7 +20,8 @@
  <img src="https://github.com/UP210923/UP210923_CPP/blob/main/imagenes/Flowchart.png" height="250" width="250">
  
  
- [Return to index](#index)
+[Return to index](#index)
+<div align="center">
 <h2>GameTest</h2>
 </div align="center">
 
