@@ -39,7 +39,12 @@
 
 ![image](https://user-images.githubusercontent.com/112887372/203225875-1595906d-6368-443c-abea-e4edf498c791.png)
 
+4. <b>After choosing a number that in this case uses the number <b>4</b>
+
  
+
+![image](https://user-images.githubusercontent.com/112887372/203226037-099dd24f-e57f-4ce6-8b32-5a9ef2b29ce1.png)
+
  
  
  
