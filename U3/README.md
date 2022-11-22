@@ -54,7 +54,6 @@
  
 ![image](https://user-images.githubusercontent.com/112887372/203228128-f836f6a1-912d-4fc4-9f5d-915e67280676.png)
 
-<h2>Advantages</h2>
 [Menu](#Menu) 
 <h2>Advantages</h2>
 
