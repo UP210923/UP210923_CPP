@@ -4,10 +4,10 @@
 <img src="https://github.com/UP210923/UP210923_CPP/blob/main/imagenes/gato.png" height="250" width="250">
 </div align="center">
 
-<h2>-INDEX:</h2> 
 [Flowchart](#Flowchart)  
 [Playtest](#Playtest)  
 [Advantages and limitations](#Advantages)  
+ 
  
 [Return to index](#index)
 <div align="center">
