@@ -25,8 +25,8 @@
 </div align="center">
 
 1. "First you choose which game mode will be played in this case we will choose player vs player"
-<h2>Flowchart</h2>
-![image](https://user-images.githubusercontent.com/112887372/203224527-1eff3d65-6cff-4c97-b881-6bbe6a125819.png)
+
+![image](https://user-images.githubusercontent.com/112887372/203224527-1eff3d65-6cff-4c97-b881-6bbe6a125819.png) height="250" width="250">
 
 
 
