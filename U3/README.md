@@ -8,4 +8,9 @@
 [Flowchart](#Flowchart)  
 [Playtest](#Playtest)  
 [Advantages and limitations](#Advantages)  
-
+ 
+[Return to index](#index)
+<div align="center">
+  
+<h2>Flowchart</h2>
+<img src="../imagenes/diagrama.png" align="center">
