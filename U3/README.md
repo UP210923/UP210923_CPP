@@ -62,6 +62,5 @@ In future works, the game can be further complemented, although for now the know
  
  
 [Menu](#Menu) 
-<h2>Bonus and Problems</h2>
 
 
