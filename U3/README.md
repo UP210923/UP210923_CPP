@@ -41,9 +41,13 @@
 
 4. <b>After choosing a number that in this case uses the number <b>4</b> the box is checked
 
+![image](https://user-images.githubusercontent.com/112887372/203226037-099dd24f-e57f-4ce6-8b32-5a9ef2b29ce1.png)
+ 
+5. In the same interface, he asks the second player to choose his move, in the same way choosing the number is the box that he marks
+ 
+![image](https://user-images.githubusercontent.com/112887372/203227646-cd87ceea-21cd-4669-b378-8268e0f9c851.png)
  
 
-![image](https://user-images.githubusercontent.com/112887372/203226037-099dd24f-e57f-4ce6-8b32-5a9ef2b29ce1.png)
 
  
  
