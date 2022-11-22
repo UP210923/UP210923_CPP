@@ -7,6 +7,7 @@
 [Flowchart](#Flowchart)  
 [GameTest](#GameTest)  
 [Advantages and limitations](#Advantages)  
+<h2>Menu</h2>
  
  
  
@@ -49,18 +50,16 @@
  
 6. In the last one, if a line of one letter is formed, be it X or 0, it is the one that wins
  
- 
 ![image](https://user-images.githubusercontent.com/112887372/203227922-71c498f6-1960-4bdf-9a18-3e245f169124.png)
  
+7. If no line is formed, the match is marked as a tie.
+ 
+![image](https://user-images.githubusercontent.com/112887372/203228128-f836f6a1-912d-4fc4-9f5d-915e67280676.png)
+
+ 
 
 
- 
- 
- 
- 
- 
- 
-[Return to index](#index)
+[Menu](#Menu) 
 <h2>Advantages</h2>
 
 
