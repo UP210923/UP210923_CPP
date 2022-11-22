@@ -26,6 +26,7 @@
 
 1. "First you choose which game mode will be played in this case we will choose player vs player"
 <h2>Flowchart</h2>
-![image](https://user-images.githubusercontent.com/112887372/203224422-70b1f06d-5812-4623-9eaf-32691beab909.png)
+![image](https://user-images.githubusercontent.com/112887372/203224527-1eff3d65-6cff-4c97-b881-6bbe6a125819.png)
+
 
 
