@@ -69,3 +69,11 @@ In future works, the game can be further complemented, although for now the know
 [Menu](#Menu) 
 
 
+
+
+
+
+
+Right here i do my FlowChart https://www.canva.com/design/DAFSo7GUmyQ/iSYWW-M_kQMGhS-_MxCd_A/edit
+
+
