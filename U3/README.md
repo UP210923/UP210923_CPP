@@ -26,9 +26,8 @@
 
 1. "First you choose which game mode will be played in this case we will choose player vs player"
 
- <div align="center">
+
 ![image](https://user-images.githubusercontent.com/112887372/203224849-6c80fca2-bcad-4e8f-b409-b89afc21f947.png)
-  <div align="center">
 
 
 
