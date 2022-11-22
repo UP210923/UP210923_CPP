@@ -59,6 +59,7 @@
 
 [Menu](#Menu) 
 <h2>Bonus_and_Problems</h2>
+ </div align="center">
 
 *By doing the work I begin to develop more my intelligence in logic, I begin to understand more how functions work, Internally handling the truth tables is the most difficult part of this program. Artificial intelligence was handled in a simpler way, using a lot of the if system and with comparisons of results.
 In future works, the game can be further complemented, although for now the knowledge is still basic.*
