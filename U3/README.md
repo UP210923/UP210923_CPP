@@ -1,12 +1,11 @@
 <div align= "center">
- INDEX
 
 <h1> TIC TAC TOE GAME (The cat game) </h1>
 <img src="https://github.com/UP210923/UP210923_CPP/blob/main/imagenes/gato.png" height="250" width="250">
 </div align="center">
 
 [Flowchart](#Flowchart)  
-[Playtest](#Playtest)  
+[GameTest](#GameTest)  
 [Advantages and limitations](#Advantages)  
  
  
@@ -19,3 +18,8 @@
   
 <h2>Flowchart</h2>
  <img src="https://github.com/UP210923/UP210923_CPP/blob/main/imagenes/Flowchart.png" height="250" width="250">
+ 
+ 
+ [Return to index](#index)
+<h2>GameTest</h2>
+</div align="center">
