@@ -47,9 +47,13 @@
  
 ![image](https://user-images.githubusercontent.com/112887372/203227646-cd87ceea-21cd-4669-b378-8268e0f9c851.png)
  
-
-
+6. In the last one, if a line of one letter is formed, be it X or 0, it is the one that wins
  
+ 
+![image](https://user-images.githubusercontent.com/112887372/203227922-71c498f6-1960-4bdf-9a18-3e245f169124.png)
+ 
+
+
  
  
  
