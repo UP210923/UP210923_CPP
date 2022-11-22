@@ -39,7 +39,7 @@
 
 ![image](https://user-images.githubusercontent.com/112887372/203225875-1595906d-6368-443c-abea-e4edf498c791.png)
 
-4. <b>After choosing a number that in this case uses the number <b>4</b>
+4. <b>After choosing a number that in this case uses the number <b>4</b> the box is checked
 
  
 
