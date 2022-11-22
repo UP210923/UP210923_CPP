@@ -6,7 +6,7 @@
 
 [Flowchart](#Flowchart)  
 [GameTest](#GameTest)  
-[Bonus and Problems](#Bonus and Problems)  
+[Bonus and Problems](#Bonus_and_Problems)  
 <h2>Menu</h2>
  
  
