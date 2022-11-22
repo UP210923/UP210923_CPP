@@ -23,3 +23,7 @@
  [Return to index](#index)
 <h2>GameTest</h2>
 </div align="center">
+
+1. "First you choose which game mode will be played in this case we will choose player vs player"
+
+
