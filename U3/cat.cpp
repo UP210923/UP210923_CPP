@@ -1,378 +1,500 @@
-/*
-Author: Alan Alejandro Hernandez Macias
-Date: 03/11/2022
-Description:
-Last Modification:
-*/
-
 #include <iostream>
-#include <time.h>
 
 using namespace std;
-void game(char board[3][3]);
-void enterMove(char board[3][3]);
-void boardBody(char board[3][3]);
-void entryMove(char board[3][3]);
-void cpu(char board[3][3]);
-int winner (char board[3][3]);
 
-void game(char board[3][3])
-{
-    int Player1=0, Player2=0;
+char coordenadasMatriz[6][11];
+void tableroJugador();
+char areaDeJuego[3][3] = {{'1', '2', '3'}, {'4', '5', '6'},{'7', '8', '9'}};
+char areaDeJuegoIA[3][3] = {{'1', '2', '3'}, {'4', '5', '6'},{'7', '8', '9'}};
+int seleccionarJugada();
+bool comprobarCasillaOcupada(int jugada);
+void colocarJugada(int jugada);
+void modoDeJuego(int);
+int mejorJugada(char);
+void colocarJugadaIAenX(int);
+void colocarJugadaIAenO(int);
+void areaIA();
+int turnoIA();
+bool comprobarCasillaOcupadaIA(int);
+bool revisarGanadorJugador(int jugada);
+bool revisarGanadorIA(int);
 
-    enterMove(board);
+int turnoJugador = 0;
 
-    do
-    {
-        system ("clear");
-        boardBody(board);
+const char IA = 'O';
+const char JUGADOR = 'X';
 
-        if (Player1 % 2 == 0)
-        {
-            entryMove(board);
-        }
-        else
-        {
-            cpu(board);
-        }
 
-        Player2 = winner(board);
-        
-        Player1++;
-        
-    } while (Player1 <= 9 && Player2 == 3);
+int main(){
+    int jugada;
+    int modoDeJuego;
+    bool casillaOcupada = true;
+    bool ganador = false;
+    cout<<"*******************************************************\n";
+    cout<<"*********************-TIC TAC TOE**********************-\n";
+    cout<<"*******************************************************\n";
+    tableroJugador();
+    cout<< "\033[0;35m"<< "********************************\n|Option   |Game mode             |\n********************************\n|    1    | Player 1 vs Player 2 |\n|    2    | Player 1 vs Computer |\n********************************\nOption: "<< "\033[0m";
+    cin>> modoDeJuego;
 
-    system ("clear");
-    boardBody(board);
-
-    if (Player2 < 2)
-    {
-        cout << endl << "\033[0;31m" << "Win" << "\033[0m"<< endl << endl; 
-    }
-    else if (Player2 > 1)
-    {
-        cout << endl << "\033[0;31m" << "Lose" << "\033[0m"<< endl << endl; 
-    }
-    else
-    {
-        cout << endl << "\033[0;31m" << "None winner" << "\033[0m"<< endl << endl; 
-    }
-    
-    
-    
-}
-
-void enterMove(char board[3][3])
-{
-    int Player1, Player2;
-    char entry;
-
-    entry = '1';
-
-    for (int Player1 = 0; Player1 < 3; Player1++)
-    {
-        for (int Player2 = 0; Player2 < 3; Player2++)
-        {
-            board[Player1][Player2] = entry++;
-        }
-    }
-}
-
-void entryMove(char board[3][3])
-{
-    int Player1, Player2, counter3;
-    char enter;
-
-    do
-    {
+    if(modoDeJuego == 1){
         do
         {
-            cout << endl << "Enter a movement: ";
-            cin >> board[3][3];
-            enter = board[3][3];
-        } while (enter < '1' || enter > '9');
-
-        counter3 = 0;
-
-        switch (enter)
-        {
-        case '1':
-        {
-            Player1 = 0;
-            Player2 = 0;
-            if (board[Player1][Player2] == 'X' || board[Player1][Player2] == 'O')
-            {
-                counter3 = 1;
-                cout << "Invalid movement!";
-            }
-            break;
-        }
-        case '2':
-        {
-            Player1 = 0;
-            Player2 = 1;
-            if (board[Player1][Player2] == 'X' || board[Player1][Player2] == 'O')
-            {
-                counter3 = 1;
-                cout << "Invalid movement!";
-            }
-            break;
-        }
-        case '3':
-        {
-            Player1 = 0;
-            Player2 = 2;
-            if (board[Player1][Player2] == 'X' || board[Player1][Player2] == 'O')
-            {
-                counter3 = 1;
-                cout << "Invalid movement!";
-            }
-            break;
-        }
-        case '4':
-        {
-            Player1 = 1;
-            PLayer2 = 0;
-            if (board[Player1][Player2] == 'X' || board[Player1][Player2] == 'O')
-            {
-                counter3 = 1;
-                cout << "Invalid movement!";
-            }
-            break;
-        }
-        case '5':
-        {
-            Player1 = 1;
-            Player2 = 1;
-            if (board[Player1][Player2] == 'X' || board[Player1][Player2] == 'O')
-            {
-                counter3 = 1;
-                cout << "Invalid movement!";
-            }
-            break;
-        }
-        case '6':
-        {
-            Player1 = 1;
-            Player2 = 2;
-            if (board[Player1][Player2] == 'X' || board[Player1][Player2] == 'O')
-            {
-                counter3 = 1;
-                cout << "Invalid movement!";
-            }
-            break;
-        }
-        case '7':
-        {
-            Player1 = 2;
-            Player2 = 0;
-            if (board[Player1][counter2] == 'X' || board[counter1][counter2] == 'O')
-            {
-                counter3 = 1;
-                cout << "Invalid movement!";
-            }
-            break;
-        }
-        case '8':
-        {
-            counter1 = 2;
-            counter2 = 1;
-            if (board[counter1][counter2] == 'X' || board[counter1][counter2] == 'O')
-            {
-                counter3 = 1;
-                cout << "Invalid movement!";
-            }
-            break;
-        }
-        case '9':
-        {
-            counter1 = 2;
-            counter2 = 2;
-            if (board[counter1][counter2] == 'X' || board[counter1][counter2] == 'O')
-            {
-                counter3 = 1;
-                cout << "Invalid movement!";
-            }
-            break;
-        }
-        }
-    } while (counter3 == 1);
-
-    board[counter1][counter2] = 'X';
-}
-
-void cpu(char board[3][3]){
-    int counter1, counter2, number;
-    srand (time(NULL));
-
-    do
-    {
-        counter1 = rand() % 3;
-        counter2 = rand() % 3;
-        number = 0;
-        if (board[counter1][counter2] == 'X' || board[counter1][counter2] == 'O')
-        {
-            number = 1;
-        }
-        
-    } while (number == 1);
-
-    board[counter1][counter2] = 'O';
-}
-
-void boardBody(char board[3][3])
-{
-    int counter1, counter2;
-
-    cout << endl << " ((Cat game))" << endl << endl;
-
-    for (int counter1 = 0; counter1 < 3; counter1++)
-    {
-        cout << "        |     |     " << endl;
-        for (int counter2 = 0; counter2 < 3; counter2++)
-        {
-            if (counter2 == 0)
-            {
-                cout << "     " << board[counter1][counter2] << "  |";
-            }
-
-            else if (counter2 == 1)
-            {
-                cout << "  " << board[counter1][counter2] << "  |";
+            jugada = seleccionarJugada();
+            casillaOcupada = comprobarCasillaOcupada(jugada);
+            if(casillaOcupada == true){
+                do
+                {
+                    cout<<"Box invailable, try again";
+                    break;
+                } while (casillaOcupada = true);
             }
             else
             {
-                cout << "  " << board[counter1][counter2] << "  ";
+                system("clear");
+                colocarJugada(jugada);
+                tableroJugador();
+                turnoJugador++;
             }
-        }
-
-        if (counter1 < 2)
+        ganador=revisarGanadorJugador(ganador);
+        } while (ganador == false && turnoJugador < 9);
+    if (turnoJugador < 9)
         {
-            cout << endl
-                 << "   _____|_____|_____" << endl;
+            if (turnoJugador % 2 == 0)
+            {
+                cout << "\033[0;31m"<< "Player 2 wins"<< "\033[0m" <<endl;
+            }
+            else
+            {
+                cout << "Player 1 wins" <<endl;
+            }
         }
         else
         {
-            cout << endl
-                 << "        |     |     "<< endl;
+            cout << "---Tie---" <<endl;
         }
     }
-}
-
-int winner (char board[3][3]){
-    if (board[0][0] == 'X' || board[0][0] == 'O')
+    else if (modoDeJuego == 2)
     {
-        if (board[0][0] == board[0][1] && board[0][0] == board[0][2])
+        do
         {
-            if (board[0][0] == 'X')
+            if (turnoJugador% 2 == 0)
             {
-                return 1;
+                jugada = seleccionarJugada();
             }
-            else if (board[0][0] == 'O')
+            else
             {
-                return 2;
+                jugada = turnoIA();
             }
-            
-        }
-        else if (board[0][0] == board[1][0] && board[0][0] == board[2][0])
-        {
-            if (board[0][0] == 'X')
-            {
-                return 1;
-            }
-            else if (board[0][0] == 'O')
-            {
-                return 2;
-            }
-        }
 
+            casillaOcupada = comprobarCasillaOcupada(jugada);
+            if (casillaOcupada == true)
+            {
+                do
+                {
+                    cout << "Box occupied, please try again" <<endl;
+                    break;
+                } while (casillaOcupada == true);
+            }
+            else if (casillaOcupada == false)
+            {
+                system("clear");
+                colocarJugada(jugada);
+                tableroJugador();
+                turnoJugador++;
+            }
+            ganador = revisarGanadorJugador(ganador);
+        } while (ganador == false && turnoJugador < 9);
+        if (turnoJugador < 9)
+        {
+            if (turnoJugador % 2 == 0)
+            {
+                cout << "Game Over :,(" <<endl;
+            }
+            else
+            {
+                cout << "You Won" <<endl;
+            }
+        }
+        else
+        {
+            cout << "Tie" <<endl;
+        }
     }
-    else if (board[1][1] == 'X' || board[1][1] == 'O')
-    {
-        if (board[1][1] == board[0][1] && board[1][1] == board[2][2])
-        {
-            if (board[1][1] == 'X')
-            {
-                return 1;
-            }
-            else if (board[1][1] == 'O')
-            {
-                return 2;
-            }
-            
-        }
-        else if (board[1][1] == board[0][1] && board[1][1] == board[2][1])
-        {
-            if (board[1][1] == 'X')
-            {
-                return 1;
-            }
-            else if (board[1][1] == 'O')
-            {
-                return 2;
-            }
-        }
-        else if (board[1][1] == board[1][0] && board[1][1] == board[1][2])
-        {
-            if (board[1][1] == 'X')
-            {
-                return 1;
-            }
-            else if (board[1][1] == 'O')
-            {
-                return 2;
-            }
-        }
-        else if (board[1][1] == board[0][2] && board[1][1] == board[2][0])
-        {
-            if (board[1][1] == 'X')
-            {
-                return 1;
-            }
-            else if (board[1][1] == 'O')
-            {
-                return 2;
-            }
-        }
-        
-    }
-    else if (board[2][2] == 'X' || board[2][2] == 'O')
-    {
-        if (board[2][2] == board[2][0] && board[2][2] == board[2][1])
-        {
-            if (board[2][2] == 'X')
-            {
-                return 1;
-            }
-            else if (board[2][2] == 'O')
-            {
-                return 2;
-            }
-            
-        }
-        else if (board[2][2] == board[0][2] && board[2][2] == board[1][2])
-        {
-            if (board[2][2] == 'X')
-            {
-                return 1;
-            }
-            else if (board[2][2] == 'O')
-            {
-                return 2;
-            }
-        }
-
-    }
-
-    return 3;
     
+    return 0;
 }
 
-int main()
+int seleccionarJugada(){
+
+    int jugada;
+    do
+    {
+        cout << "Give me the number of your play: ";
+        cin >> jugada;
+    } while (jugada < 0 || jugada > 9);
+    return jugada;
+
+}
+
+bool comprobarCasillaOcupada(int jugada)
 {
-    char board[3][3];
+    int row = jugada / 10; 
+    int col = jugada - 1;
+    if (areaDeJuego[row][col] == 'X' || areaDeJuego[row][col] == 'O')
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
 
-    game(board);
+void colocarJugada(int jugada)
+{
+    char valorJugada;
+    if (turnoJugador % 2 == 0)
+    {
+        valorJugada = 'X';
+    }
+    else
+    {
+        valorJugada = 'O';
+    }
 
-    return 0;
+    if (jugada == 1)
+    {
+        areaDeJuego[0][0] = valorJugada;
+    }
+    else if (jugada == 2)
+    {
+        areaDeJuego[0][1] = valorJugada;
+    }
+    else if (jugada == 3)
+    {
+        areaDeJuego[0][2] = valorJugada;
+    }
+    else if (jugada == 4)
+    {
+        areaDeJuego[1][0] = valorJugada;
+    }
+    else if (jugada == 5)
+    {
+        areaDeJuego[1][1] = valorJugada;
+    }
+    else if (jugada == 6)
+    {
+        areaDeJuego[1][2] = valorJugada;
+    }
+    else if (jugada == 7)
+    {
+        areaDeJuego[2][0] = valorJugada;
+    }
+    else if (jugada == 8)
+    {
+        areaDeJuego[2][1] = valorJugada;
+    }
+    else if (jugada == 9)
+    {
+        areaDeJuego[2][2] = valorJugada;
+    }
+}
+
+bool revisarGanadorJugador(int jugada){
+    bool revisarGanador = false;
+    for (int posicion = 0; posicion < 3; posicion++)
+    {
+        if ((areaDeJuego[0][posicion] == areaDeJuego[1][posicion]) && (areaDeJuego[0][posicion] == areaDeJuego[2][posicion]))
+        {
+            revisarGanador = true;
+            break;
+        }
+        else if ((areaDeJuego[posicion][0] == areaDeJuego[posicion][1]) && (areaDeJuego[posicion][0] == areaDeJuego[posicion][2]))
+        {
+            revisarGanador = true;
+            break;
+        }
+        else if ((areaDeJuego[posicion][posicion] == areaDeJuego[posicion+1][posicion+1]) && (areaDeJuego[posicion][posicion] == areaDeJuego[posicion+2][posicion+2]))
+        {
+            revisarGanador = true;
+            break;
+        }
+        else if ((areaDeJuego[2][0] == areaDeJuego[1][1]) && (areaDeJuego[2][0] == areaDeJuego[0][2]))
+        {
+            revisarGanador = true;
+            break;
+        }
+    }
+    return revisarGanador;
+}
+
+void tableroJugador(){
+    int c1=0, f1=0;
+    for(int row=0; row<6 ; row++){
+        for(int col=0; col<11; col++){
+
+            if(col==3 || col==7){
+                coordenadasMatriz[row][col]='|';
+            }
+            else if (row==1 || row==3){
+                coordenadasMatriz[row][col]='_';
+            }
+            
+            else if (row!=5 &&(col ==9 || col== 5 || col==1))
+            {
+                coordenadasMatriz[row][col]= areaDeJuego[f1][c1];  
+                c1++;
+                if (c1 == 3)
+                {
+                    c1 = 0;
+                    f1++;
+                } 
+            }
+            
+            else{
+                coordenadasMatriz[row][col]=' ';
+            }
+        }
+    }
+
+    for(int f1=0; f1<6 ; f1++){
+        for(int c1=0; c1<11; c1++){
+            if (coordenadasMatriz[f1][c1]=='X')
+            {
+                cout<< "\033[0;31m" << coordenadasMatriz[f1][c1] << "\033[0m";
+            }
+            else if (coordenadasMatriz[f1][c1]=='O')
+            {
+                cout<< "\033[0;34m" << coordenadasMatriz[f1][c1] << "\033[0m";
+            }
+            else
+            {
+                cout<<coordenadasMatriz[f1][c1];
+            }
+        }
+        cout<<"\n";
+    }   
+}
+
+int turnoIA()
+{
+    int jugada;
+    bool jugadaUtilizada = false;
+    jugada = mejorJugada(IA);
+    if (jugada != -1)
+    {
+        return jugada;
+    }
+
+    jugada= mejorJugada(JUGADOR);
+    if (jugada != -1)
+    {
+        return jugada;
+    }
+    while (jugadaUtilizada== false)
+    {
+        jugadaUtilizada = comprobarCasillaOcupada(jugada);
+        jugada = 1 + rand() % 9; 
+    }
+    return jugada;
+}
+
+void areaIA()
+{
+    for (int row = 0; row < 3; row++)
+    {
+        for (int col = 0; col < 3; col++)
+        {
+            areaDeJuegoIA[row][col] = areaDeJuego[row][col];
+        }
+    }
+}
+
+bool comprobarCasillaOcupadaIA(int Jugada)
+{
+    int row = Jugada / 10;
+    int col = Jugada - 1;
+    if (areaDeJuegoIA[row][col] == 'X' || areaDeJuegoIA[row][col] == 'O')
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+bool revisarGanadorIA(int jugada){
+    bool revisarGanador = false;
+    for (int posicion = 0; posicion < 3; posicion++)
+    {
+        if ((areaDeJuegoIA[0][posicion] == areaDeJuegoIA[1][posicion]) && (areaDeJuegoIA[0][posicion] == areaDeJuegoIA[2][posicion]))
+        {
+            revisarGanador = true;
+            break;
+        }
+        else if ((areaDeJuegoIA[posicion][0] == areaDeJuegoIA[posicion][1]) && (areaDeJuegoIA[posicion][0] == areaDeJuegoIA[posicion][2]))
+        {
+            revisarGanador = true;
+            break;
+        }
+        else if ((areaDeJuegoIA[posicion][posicion] == areaDeJuegoIA[posicion+1][posicion+1]) && (areaDeJuegoIA[posicion][posicion] == areaDeJuegoIA[posicion+2][posicion+2]))
+        {
+            revisarGanador = true;
+            break;
+        }
+        else if ((areaDeJuegoIA[2][0] == areaDeJuegoIA[1][1]) && (areaDeJuegoIA[2][0] == areaDeJuegoIA[0][2]))
+        {
+            revisarGanador = true;
+            break;
+        }
+    }
+    return revisarGanador;
+}
+
+void colocarJugadaIAenX(int jugada)
+{
+
+    int row;
+    int col;
+    if (jugada == 1)
+    {
+        row = 0;
+        col = 0;
+    }
+    else if (jugada == 2)
+    {
+        row = 0;
+        col = 1;
+    }
+    else if (jugada == 3)
+    {
+        row = 0;
+        col = 2;
+    }
+    else if (jugada == 4)
+    {
+        row = 1;
+        col = 0;
+    }
+    else if (jugada == 5)
+    {
+        row = 1;
+        col = 1;
+    }
+    else if (jugada == 6)
+    {
+        row = 1;
+        col = 2;
+    }
+    else if (jugada == 7)
+    {
+        row = 2;     
+        col = 0;
+    }
+    else if (jugada == 8)
+    {
+        row = 2;
+        col = 1;
+    }
+    else if (jugada == 9)
+    {
+        row = 2;
+        col = 2;
+    }
+    areaDeJuegoIA[row][col] = 'X';
+}
+
+void colocarJugadaIAenO(int jugada)
+{
+    int row;
+    int col;
+    if (jugada == 1)
+    {
+        row = 0;
+        col = 0;
+    }
+    else if (jugada == 2)
+    {
+        row = 0;
+        col = 1;
+    }
+    else if (jugada == 3)
+    {
+        row = 0;
+        col = 2;
+    }
+    else if (jugada == 4)
+    {
+        row = 1;
+        col = 0;
+    }
+    else if (jugada == 5)
+    {
+        row = 1;
+        col = 1;
+    }
+    else if (jugada == 6)
+    {
+        row = 1;
+        col = 2;
+    }
+    else if (jugada == 7)
+    {
+        row = 2;     
+        col = 0;
+    }
+    else if (jugada == 8)
+    {
+        row = 2;
+        col = 1;
+    }
+    else if (jugada == 9)
+    {
+        row = 2;
+        col = 2;
+    }
+    areaDeJuegoIA[row][col] = 'O';
+}
+
+int mejorJugada(char entradaJugador)
+{
+    bool jugadaUsada= false;
+    bool ganador = false;
+    int jugadaIA = 0;
+    areaIA();
+    if (entradaJugador == 'X')
+    {
+        do
+        {
+            jugadaIA++;
+            jugadaUsada = comprobarCasillaOcupadaIA(jugadaIA);
+            if (jugadaUsada == false)
+            {
+                colocarJugadaIAenX(jugadaIA);
+                ganador = revisarGanadorIA(jugadaIA);
+            }
+            areaIA();
+        } while (jugadaIA <= 9 && ganador == false);
+    }
+    else
+    {
+        do
+        {
+            jugadaIA++;
+            jugadaUsada = comprobarCasillaOcupadaIA(jugadaIA);
+            if (jugadaUsada == false)
+            {
+                colocarJugadaIAenO(jugadaIA);
+                ganador = revisarGanadorIA(jugadaIA);
+            }
+            areaIA();
+        } while (jugadaIA <= 9 && ganador == false);
+    }
+    if (jugadaIA >= 10)
+    {
+        jugadaIA = -1;
+    }
+    return jugadaIA;
 }
