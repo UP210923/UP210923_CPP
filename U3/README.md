@@ -55,9 +55,12 @@
 ![image](https://user-images.githubusercontent.com/112887372/203228128-f836f6a1-912d-4fc4-9f5d-915e67280676.png)
 
 [Menu](#Menu) 
-<h2>Advantages</h2>
+<h2>Bonus and Problems</h2>
 
-**By doing the work I begin to develop more my intelligence in logic, I begin to understand more how functions work**
+*By doing the work I begin to develop more my intelligence in logic, I begin to understand more how functions work, Internally handling the truth tables is the most difficult part of this program. Artificial intelligence was handled in a simpler way, using a lot of the if system and with comparisons of results.
+In future works, the game can be further complemented, although for now the knowledge is still basic.
+
+*
 
 
 
